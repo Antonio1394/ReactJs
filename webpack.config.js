@@ -5,6 +5,11 @@ module.exports = {
   context: __dirname,
   devtool: debug ? "inline-sourcemap" : null,
   entry: "./app/dist/index.js",
+  module:{
+    loaders:[
+
+    ]
+  }
   output: {
     path: __dirname + "/app/js",
     filename: "index.min.js"
